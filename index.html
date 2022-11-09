@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>sazy</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="sazy">
+    <meta name="theme-color" content="#2f3136">
+    <meta property="og:url" content="index.html">
+    <meta property="og:description" content="#CEO">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" data-react-helmet="true" content="#2f3136">
+    <meta itemprop="image" content="asset/fav/kiyotaka.png" />
+    <link rel="shortcut icon" href="/asset/discord/vigar.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="css/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <script
+src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous"></script>
+<script src="../unpkg.com/typewriter-effect%402.19.0/dist/core.js"></script>
+<script src="js/type.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/block.js"></script>
+<script src="js/info.js"></script>
+
+    
+</head>
+<body ondragstart="return false;">
+  <script lenguage="Javascript">
+      this.titleChanger = function (text, delay) {
+    text = text ||
+        ['s', 'sa', 'saz', 'sazy', 'sazy.', 'sazy.m', 'sazy.me', 'sazy.m', 'sazy.', 'sazy', 'saz', 'sa', 's'];
+    delay = delay || 250;
+
+    var counter = 0;
+
+    setInterval(function () {
+        if(counter < text.length)
+            document.title = text[counter++];
+        else
+            document.title = text[counter = 0];
+    }, delay);
+}
+this.titleChanger();
+  </script>
+ 
+
+   <div id="landing">
+       <u><p class="acces-button" onclick="enter_website();">click here</p><br></u>
+        <div></div>
+        <div class="firstline"><span class="color"> </span></div>
+        <p style="font-size: 30px;" id="ip" class="color"></p><br>
+        <p style="font-size: 25px;" id="city"></p>
+        <p style="font-size: 25px;" id="zip"></p>
+        <p style="font-size: 25px;" id="region"></p>
+        <p style="font-size: 25px;" id="country"></p><br>
+        <img id="countryFlag" width="10%"><br>
+        <p style="font-size: 25px;" id="coords"></span><br>
+        <p style="font-size: 25px;" class="color" id="org"></p><br>
+        <p style="font-size: 25px;" class="color" id="sus"></p><br>
+    </div>
+
+
+    <div id="music-control" class="hidden">
+      <audio id="music" src="asset/background/turn.mp3" loop></audio>
+    </div>
+
+    <div id="content" class="hidden">
+      <div id="video-overlay"></div>
+      <div id="pattern"></div>
+      <video id="video-control" loop autoplay webkit-playsinline playsinline>
+        <source id="video" src="asset/background/up.mp4" type="video/mp4">
+      </video>
+
+      <div style="display: flex; flex-direction: column; z-index: 999; justify-content: center; align-items: center;">
+        <p class="title" onclick="">sazy#3000</p>
+        <p class="description">48.428.114</p>
+        <p class="typewriter" id="Typewriter"><span class="Typewriter__wrapper"></span><span class="Typewriter__cursor">|</span></p>
+        <div style="display: flex; flex-direction: row;">
+          <p id="tele" class="link" style="padding-right: 5px;" onclick="copy_tele()">[telegram]</p>
+          <p id="servers" class="link" style="padding-left: 5px; padding-right: 5px" onclick="open_servers()">[github]</p>
+          <p id="discord" class="link" style="padding-left: 5px;" onclick="copy_discord()">[discord]</p>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
